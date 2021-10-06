@@ -1,0 +1,3 @@
+export const GET_TOPICS_SUCCESS="GET_TOPICS_SUCCESS";
+export const SEARCH_WORD="SEARCH_WORD";
+export const LEARN_MORE="LEARN_MORE";
