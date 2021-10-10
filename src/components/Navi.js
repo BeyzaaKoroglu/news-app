@@ -100,7 +100,6 @@ function Navi() {
           >
             <MenuIcon />
           </IconButton>
-          {searchValue}
 
           <Button>
             <a href="/news" className="NaviLink">
@@ -112,11 +111,11 @@ function Navi() {
               Sport
             </a>
           </Button>
-          {/* <Button>
+          <Button>
             <a href="/tech" className="NaviLink">
               Technology
             </a>
-          </Button> */}
+          </Button>
           <Button>
             <a href="/world" className="NaviLink">
               World

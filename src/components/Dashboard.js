@@ -70,13 +70,7 @@ function Dashboard({ url }) {
 
   return (
     <Container fluid>
-      {url}
-      {search_word}
-      <div>
-        <br></br>
-        {allTopics.length}
-      </div>
-
+      
       {allTopics.length > 0 ? (
         allTopics.map(
           (data) =>
@@ -120,7 +114,7 @@ function Dashboard({ url }) {
                       color="primary"
                       onClick={() => learnMore(data)}
                     >
-                      <Link to={`/detail/${data.title}`}>Learn More</Link>
+                      <Link to={`/detail/${encodeURIComponent(data.title)}`}>Learn More</Link>
                     </Button>
                   </CardActions>
                 </Card>

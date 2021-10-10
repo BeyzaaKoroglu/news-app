@@ -8,9 +8,10 @@ export function getTopicsSuccess(topics) {
 
 export function getTopics(search) {
   return (dispatch) => {
+    const receivedArticleName = encodeURIComponent(search);
     axios({
       method: "GET",
-      url: `https://free-news.p.rapidapi.com/v1/search?q=${search}&lang=en`,
+      url: `https://free-news.p.rapidapi.com/v1/search?q=${receivedArticleName}&lang=en`,
       headers: {
         "x-rapidapi-host": "free-news.p.rapidapi.com",
         "x-rapidapi-key": "6834cb11fbmsh22aaec9f27ba0cfp1ba3aejsne67a01542e40",
